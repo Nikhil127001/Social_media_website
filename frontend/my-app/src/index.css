@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.fixed-component {
+  position: fixed;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  /* Add any other desired styles */
+}
+#fixedComponent {
+ background-color: white;
+ height: 100%;
+ font-size: 18px;
+ border-right: 0.5px solid rgba(209, 209, 209, 0.984);
+ width: 250px;
+}
+
+.stickyComponent {
+ top: 20px;
+ right: 10px;
+ position: absolute;
+}
+
+.posts-component{
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+@media (max-width: 1300px){
+  .stickyComponent{
+    display: none;
+  }
+}
+@media (max-width: 650px){
+  .posts-component{
+    margin-left: 150px;
+  }}
+@media (max-width: 866px){
+  .posts-component{
+    margin-left: 200px;
+  }
+}
+
+.iconCss{
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
+.Story-Component{
+  border: 2px solid black;
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Story-Component2{
+  border: 2px solid black;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.Story-Component3{
+  border: 2px solid black;
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sliding-window {
+  width: 300px; /* Adjust the width as per your needs */
+  overflow: hidden;
+  position: relative;
+}
+
+.window-content {
+  width: max-content;
+  position: absolute;
+  animation: slideLeft 5s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes slideLeft {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+
